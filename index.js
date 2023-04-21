@@ -33,7 +33,6 @@ async function handleDraw() {
         <p id="user-score">Your Score: ${userScore}</p>
     `;
     document.getElementById('remaining-cards').textContent = `Remaining cards: ${data.remaining}`;
-    console.log(document.getElementById('computer-score'));
     if(data.remaining===0) {
         document.getElementById('draw-card').disabled = true;
         if(compScore>userScore) {
