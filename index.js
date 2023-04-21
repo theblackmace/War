@@ -15,8 +15,12 @@ async function handleShuffle() {
     compScore = 0;
     userScore = 0;
     document.getElementById('result').textContent = 'Game of War!';
-    document.getElementById('computer-score').textContent = `Computer's Score: ${compScore}`;
-    document.getElementById('user-score').textContent = `Your Score: ${userScore}`;
+    document.getElementById('img-container').innerHTML = `
+        <p id="computer-score">Computer's Score: ${compScore}</p>
+        <div class="placeholder"></div>
+        <div class="placeholder bottom"></div>
+        <p id="user-score">Your Score: ${userScore}</p>
+    `;
     document.getElementById('draw-card').disabled = false;
 }
 
