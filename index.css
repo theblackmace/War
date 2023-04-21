@@ -1,0 +1,83 @@
+/* Layout */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/table.png");
+    background-size: cover;
+    font-family: "Exo 2", sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* add this */
+}
+
+.top {
+    display: flex;
+}
+
+.placeholder {
+    height: 120px;
+    width: calc(120px * 5 / 7);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.img-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Elements */
+
+button {
+    background-color: #67073A;
+    cursor: pointer;
+}
+
+button.draw {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: auto;
+    align-self: stretch;
+}
+
+button.new-deck {
+    align-self: flex-start;
+    padding: 7px 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div.top {
+    display: flex;
+    align-self: flex-start;
+}
+
+div.top > p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.placeholder.bottom {
+    margin-top: 50px;
+}
+
+p,h2 {
+    color: white;
+}
+
+/* Utility */
+
+button:disabled {
+    cursor: not-allowed;
+}
